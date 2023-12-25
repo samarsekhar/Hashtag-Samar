@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation of background-color</title>
+    <style>
+      body {
+        padding: 100px;
+      }
+      #myDiv {
+        width: 300px;
+        height: 200px;
+        background: red;
+        animation: mymove 5s infinite;
+      }
+
+      @keyframes mymove {
+        50% {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation of background color</h1>
+    <p>Change the background color from red to blue, and back to red..</p>
+
+    <div id="myDiv"></div>
+
+    <p>✅HashtagSamar</p>
+  </body>
+</html>

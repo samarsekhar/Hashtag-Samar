@@ -1,0 +1,17 @@
+body {
+  padding: 100px;
+}
+
+input {
+  padding: 20px;
+  border: 1px solid blueviolet;
+  caret-color: blueviolet;
+}
+
+input:focus {
+  outline: 2px solid blueviolet;
+}
+
+input::placeholder {
+  color: blueviolet;
+}

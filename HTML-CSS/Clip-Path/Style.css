@@ -1,0 +1,14 @@
+body {
+  padding: 70px;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: blueviolet;
+  clip-path: circle(50% at 0 0);
+  transition: all 2s ease;
+}
+
+.container:hover {
+  clip-path: circle(100%);
+}

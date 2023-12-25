@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Year Animation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: "Barlow Condensed", sans-serif;
+      }
+      p {
+        font-size: 120px;
+        font-weight: bold;
+        text-align: center;
+        color: #333;
+      }
+      span {
+        cursor: pointer;
+      }
+      .animation {
+        color: yellow;
+        text-shadow: 0 0 10px yellow, 0 0 25px yellow;
+        animation: glow 1.5s linear infinite;
+      }
+      @keyframes glow {
+        0% {
+          filter: hue-rotate(0deg);
+        }
+        100% {
+          filter: hue-rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span>
+      <span>N</span><span>e</span><span>w</span> <span>Y</span><span>e</span
+      ><span>a</span><span>r</span> <span>2</span><span>0</span><span>2</span
+      ><span>4</span>
+    </p>
+
+    <script>
+      var elem = document.getElementsByTagName("span");
+      for (var i = 0; i < elem.length; i++) {
+        elem[i].addEventListener("click", function () {
+          if (this.classList.contains("animation")) {
+            this.classList.remove("animation");
+          } else {
+            this.classList.add("animation");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

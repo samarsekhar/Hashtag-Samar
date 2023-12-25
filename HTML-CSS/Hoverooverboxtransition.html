@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hover over the box to see these properties animated.</title>
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        height: 50vh;
+      }
+      .box {
+        border-style: solid;
+        border-width: 1px;
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: #0000ff;
+        transition: width 2s, height 2s, background-color 2s, rotate 2s;
+      }
+      .box:hover {
+        background-color: #fffc78;
+        width: 200px;
+        height: 200px;
+        rotate: 180deg;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The Box combines transitions for: Width,height,background-color rotate.
+         Hover over the box to see these properties animated.-->
+    <div class="box">Hashtag Samar</div>
+  </body>
+</html>

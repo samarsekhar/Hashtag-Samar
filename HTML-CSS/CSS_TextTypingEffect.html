@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Text Typing Effect...</title>
+    <style>
+      div {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .typewriter h1 {
+        overflow: hidden;
+        border-right: 0.15em solid red;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        animation: typing 2s steps(22, end), blink-caret 3s step-end infinite;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="typewriter">
+      <h1>Hello, Myself Samar a Full Stack Developer</h1>
+    </div>
+  </body>
+</html>

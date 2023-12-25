@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Snap Scroll Effect...</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .conatiner {
+        overflow: scroll;
+        height: 100vh;
+        scroll-snap-type: y proximity;
+      }
+
+      section {
+        height: 100vh;
+        font-size: 72px;
+        color: lightcoral;
+        scroll-snap-align: end;
+        text-align: center;
+      }
+
+      section:nth-child(1) {
+        background-color: lightblue;
+      }
+      section:nth-child(2) {
+        background-color: lightgreen;
+      }
+      section:nth-child(3) {
+        background-color: lightsalmon;
+      }
+      section:nth-child(4) {
+        background-color: lightseagreen;
+      }
+      section:nth-child(5) {
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section>Section 1</section>
+      <section>Section 2</section>
+      <section>Section 3</section>
+      <section>Section 4</section>
+      <section>Section 5</section>
+    </div>
+  </body>
+</html>

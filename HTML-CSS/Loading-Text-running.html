@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Loading text class running</title>
+    <style>
+      h2 {
+        position: relative;
+        font-size: 5em;
+        color: rgb(199, 255, 110);
+        text-transform: uppercase;
+        border-bottom: 10px solid #ffffff;
+        line-height: initial;
+      }
+      h2::before {
+        content: attr(loading-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        color: #b0a8e2;
+        overflow: hidden;
+        border-bottom: 10px solid #b0a8e2;
+        animation: loading 5s linear infinite;
+      }
+      @keyframes loading {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 loading-text="SAMAR...">SAMAR...</h2>
+  </body>
+</html>

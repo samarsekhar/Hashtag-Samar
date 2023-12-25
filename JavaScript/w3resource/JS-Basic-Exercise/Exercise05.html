@@ -1,0 +1,46 @@
+<!--                Exercise - 4                -->
+<!-- 
+    Write a JavaScript program to rotate the string 'Hashtag Samar' in the right direction.
+    This is done by periodically removing one letter from the string end and attaching it to the font.
+
+ -->
+
+<!-- Solution -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript basic</title>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        padding: 50vh;
+      }
+    </style>
+  </head>
+  <body onload="animate_string('target')">
+    <pre id="target">Hashtag Samar</pre>
+
+    <script>
+      // Define a function that animates the characters of a string
+      function animate_string(id) {
+        // Get the HTML element by its id
+        var element = document.getElementById(id);
+        // Access the text node inside the element
+        var textNode = element.childNodes[0];
+
+        // Extract the initial text content of the text node
+        var text = textNode.data;
+
+        // Set up an interval to rotate the characters
+        setInterval(function () {
+          // Move the last character to the beginning of the string
+          text = text[text.length - 1] + text.substring(0, text.length - 1);
+
+          // update the text content of text node with the modified string
+          textNode.data = text;
+        }, 100);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form placeholder shown</title>
+    <style>
+      body {
+        margin-left: 20%;
+      }
+      label {
+        display: block;
+        margin: 1em;
+      }
+      input:placeholder-shown {
+        background-color: ivory;
+        border: 2px solid darkorange;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="name">Full Name</label>
+      <input name="name" type="text" />
+      <label for="email">Email Address</label>
+      <input name="email" type="email" placeholder="name@example.com" />
+      <label for="age">Your age:</label>
+      <input
+        name="age"
+        type="number"
+        value="18"
+        placeholder="You must be 18+"
+      />
+      <br />
+      <br />
+      <button type="submit">Click Me</button>
+    </form>
+  </body>
+</html>

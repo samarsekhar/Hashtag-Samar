@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combobox</title>
+    <style>
+      @import "https://raw.githubusercontent.com/jonathantneal/system-font-css/gh-pages/system-font.css";
+
+      body {
+        background: dodgerblue
+          linear-gradient(22deg, aqua, dodgerblue, deeppink) fixed;
+        color: white;
+        font: normal 32px/1.6 system-ui, sans-serif;
+        text-shadow: 0 1px 1px hsl(0, 0% 0% / 20%);
+        margin: 3rem;
+      }
+      input {
+        font: inherit;
+        padding: 0.2em 0, 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A fixed-list combo is when a user can type a certain string, 
+        and there is a list of strings that is designed to help the 
+        user arrive at a value. Try it out!.
+    -->
+    <input type="text" name="fruit" list="fruits" autocomplete="off" />
+    <datalist id="fruits">
+      <option>Apple</option>
+      <option>Banana</option>
+      <option>Orange</option>
+      <option>Pineapple</option>
+      <option>Kiwi</option>
+    </datalist>
+  </body>
+</html>

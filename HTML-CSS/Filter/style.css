@@ -1,0 +1,14 @@
+body {
+  padding: 100px;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+  border: 5px solid aqua;
+  filter: saturate(100%);
+}
+
+img:active {
+  filter: none;
+}
