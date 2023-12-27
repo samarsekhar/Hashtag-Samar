@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example of CSS border Property Animation</title>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        padding: 100px;
+      }
+      .animated {
+        width: 300px;
+        padding: 40px 0;
+        font: bold 46px sans-serif;
+        text-align: center;
+        background: #f5d8f4;
+        border: 2px solid orchid;
+        -webkit-animation: test 4s infinite;
+        animation: test 4s infinite;
+      }
+
+      @-webkit-keyframes test {
+        50% {
+          border: 20px solid indigo;
+        }
+      }
+
+      @keyframes test {
+        50% {
+          border: 20px solid indigo;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animated">Box</div>
+  </body>
+</html>

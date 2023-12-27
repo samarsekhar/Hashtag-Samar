@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addEventListener</title>
+    <style>
+      body {
+        display: grid;
+        padding: 100px;
+        place-items: center;
+      }
+      .button {
+        background-color: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Click</button>
+
+    <script>
+      const button = document.querySelector("button");
+      button.addEventListener("click", (event) => {
+        button.textContent = `Click count: ${event.detail}`;
+      });
+    </script>
+  </body>
+</html>
